@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <h1>Login Form</h1>
+
+    <form id="loginForm" action="#" method="POST">
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required maxlength="16" placeholder="Enter your password">
+
+        <br>
+
+        <!-- Radio Buttons for Gender -->
+        <p>Gender:</p>
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio" value="male" required>
+        
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="female">
+
+        <br>
+
+        <!-- Checkbox for Terms and Conditions -->
+        <label for="termsAndConditions">
+            <input id="termsAndConditions" type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label>
+
+        <br>
+
+        <!-- Dropdown for Country -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <br>
+
+        <!-- Text Area for Comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Leave your comments here..."></textarea>
+
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
