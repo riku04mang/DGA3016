@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+.container {
+    text-align: center;
+}
+
+.tic-tac-toe {
+    border-collapse: collapse; /* Remove space between borders */
+}
+
+.tic-tac-toe td {
+    width: 100px; /* Set width of cells */
+    height: 100px; /* Set height of cells */
+    border: 1px solid black; /* Set border width */
+    text-align: center; /* Center align text inside cells */
+    vertical-align: middle; /* Center vertically */
+    font-size: 24px; /* Optional font size for the text */
+}
