@@ -1,0 +1,43 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.blog-container {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #bdc7cf;
+}
+
+/* Blog post styling */
+.blog-post {
+    margin-bottom: 20px;
+}
+
+/* Date styling */
+.date {
+    color: #3098dd;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+/* Title styling */
+h2 {
+    color: #354b63;
+    margin: 10px 0;
+}
+
+/* Horizontal rule between posts */
+hr {
+    border: none;
+    border-top: 1px solid #bdc7cf;
+    margin: 20px 0;
+}
