@@ -9,41 +9,7 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            color: #212529;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #212529;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #f97316;
+            font-family: Arial, sans-serif;
         }
 
         .hero {
@@ -54,7 +20,6 @@
             position: relative;
             overflow: hidden;
             background-color: #f8f9fa;
-            padding-top: 100px;
         }
 
         .background-texture {
@@ -88,7 +53,7 @@
         }
 
         .title {
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: bold;
             margin: 0;
             line-height: 1.2;
@@ -143,7 +108,7 @@
 
         .image-wrapper {
             width: 100%;
-            padding-top: 100%;
+            padding-top: 120%;
             background-color: #e9ecef;
             border-radius: 20px;
             overflow: hidden;
@@ -175,6 +140,25 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav a {
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
@@ -184,19 +168,25 @@
             .text-section {
                 align-items: center;
             }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav a {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">EXHIBITION'24</div>
-        <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#schedule">SCHEDULE</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+    </div>
 
     <div class="hero">
         <!-- Background texture -->
